@@ -1,0 +1,141 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_ProcéduresGlobales
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1f1458d8002bb727
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : ErreurWS
+     procedure_id : 2239512655283676847
+     type_code : 15
+     code : |1-
+      
+      // Résumé : Gère les erreurs du web service
+      // Syntaxe :
+      //ErreurWS (<sErreur> est chaîne ANSI)
+      //
+      // Paramètres :
+      //	sErreur (chaîne ANSI) : L'erreur à afficher sur la première ligne
+      //
+      PROCEDURE ErreurWS(sErreur est une chaine)
+      
+      sErreurWS est une chaine = sErreurInfoBackOffice()
+      
+      Si sErreurWS  ~= "" ALORS
+      	sErreur += RC + ErreurInfo()
+      SINON
+      	sErreur += RC + sErreurWS
+      FIN
+      
+      erreur(sErreur)
+     type : 458752
+   -
+     name : SupprimeCacheFamille
+     procedure_id : 2239798661452857409
+     type_code : 15
+     code : |1+
+      // Résumé : <indiquez ici ce que fait la procédure>
+      // Syntaxe :
+      //SupprimeCacheFamille ( [<nIDFamille> est entier])
+      //
+      // Paramètres :
+      //	nIDFamille (entier - valeur par défaut=0) : <indiquez ici le rôle de nIDFamille>
+      // Valeur de retour :
+      // 	Aucune
+      //
+      PROCEDURE SupprimeCacheFamille(nIDFamille est un entier = 0)
+      
+      sFichier est un chaine
+      
+      POUR TOUT stFamille de gtabFamilles
+      	Si nIDFamille = 0 _ou_ stFamille.IDFamille = nIDFamille ALORS
+      		sFichier = gsRepCacheFamilles + [fsep] + fExtraitChemin(stFamille.Photo,fExtension+fFichier)
+      		
+      		Si fFichierExiste(sFichier) ALORS
+      			fSupprime(sFichier)
+      		FIN
+      	FIN
+      FIN
+      
+     type : 458752
+   -
+     name : ChargeProduit
+     procedure_id : 2240579434968168181
+     type_code : 15
+     code : |1+
+      // Résumé : Charge un produit en mémoire
+      // Syntaxe :
+      //[ <Résultat> = ] ChargeProduit (<nIDProduit> est entier)
+      //
+      // Paramètres :
+      //	nIDProduit (entier) : <indiquez ici le rôle de nIDProduit>
+      // Valeur de retour :
+      // 	xsdEntité : // 	Aucune
+      //
+      PROCEDURE ChargeProduit(nIDProduit est un entier)
+      
+      // Variables locales
+      stProduitRetour		est un STCOL_Produit
+      tReponse 			est un LireProduitResponse
+      sImageDistante		est une chaine
+      sImageCache 		est une chaine
+      stPhoto				est une STCOL_PhotoProduit
+      bTrouvé 			est un booléen
+      
+      pour tout stProduit de gtabProduits
+      	Si stProduit.IDProduit = nIDProduit ALORS
+      		bTrouvé = vrai
+      		stProduitRetour = stProduit
+      		sortir
+      	FIN
+      FIN
+      
+      Si pas bTrouvé ALORS
+      	// Exécute la recherche
+      	Sablier(Vrai)
+      	tReponse = LireProduit(nIDProduit,1)
+      	stProduitRetour = tReponse.LireProduitResult
+      	
+      	// Photo
+      	POUR TOUT stPhoto DE stProduitRetour.tabPhotoProduit
+      		SI stPhoto.ParDéfaut = Vrai ALORS
+      			sImageDistante = gsURLSite + ["/"] + stPhoto.Photo
+      			
+      			// Téléchargement de la photo
+      			sImageCache = gsRepCacheProduits + [fSep] + fExtraitChemin(sImageDistante,fExtension+fFichier)
+      			SI PAS fFichierExiste(sImageCache) ALORS
+      				HTTPDestination(sImageCache)
+      				HTTPRequête(sImageDistante)
+      			FIN
+      		FIN
+      	FIN
+      	
+      	TableauAjoute(gtabProduits,stProduitRetour)
+      	
+      	Sablier(Faux)
+      FIN
+      
+      renvoyer stProduitRetour
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x10fadbd50000f3c0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

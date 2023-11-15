@@ -1,0 +1,187 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : eCommerce BackOffice
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : ""
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : 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
+ configurations :
+  -
+    name : Exécutable Windows 32 bits
+    internal_properties : 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
+    configuration_id : 4945819813592167686
+    type : 1
+    generation_name : eCommerce BackOffice.exe
+    version :
+     major_version : 1
+    icon_filename : .\commerce.ico
+    language : 1
+ elements :
+  identifier : 0x4f0e9ce7000278f6
+  elements :
+   -
+     name : FEN_POPUP_Modifier_Promotion
+     identifier : 0x4f15a078003c7f55
+     internal_properties : CAAAAAgAAADzTyt/zLnxKgM4qLVOkpoZQ3wuDqSW5e6/kJ07TsFdi6lHxBwK9h7ZUMw2ggL++u7WXg==
+     physical_name : .\FEN_POPUP_Modifier_Promotion.wdw
+     type : 2
+   -
+     name : FEN_POPUP_Modifier_Actualité
+     identifier : 0x4f1d7e7a001382be
+     internal_properties : CAAAAAgAAAAQ7khUUwggO5K3EzDJDguSXOmrgzpgin5OD8Yd7zHbDSM/Nqp/eZtU31tFs3NtFYt1/Q==
+     physical_name : .\FEN_POPUP_Modifier_Actualité.wdw
+     type : 2
+   -
+     name : eCommerce
+     identifier : 0x4f218828001237ac
+     internal_properties : CAAAAAgAAAClHjlfkvZAdmriiP4qAXQx8ZkaCn1KKj8onQ5mN12przqy0Pml2JuAT4Sc
+     physical_name : .\eCommerce.wdsdl
+     type : 22
+   -
+     name : COL_ProcéduresGlobales
+     identifier : 0x4f1458dc000ec412
+     internal_properties : CAAAAAgAAAAqIBJ2tfK65fihAQL7EiGU3o/FHaDWuEiuM45NM81HyUvLRpqNa4lCyXVvSckH8+UvNw==
+     physical_name : .\COL_ProcéduresGlobales.wdg
+     type : 7
+   -
+     name : FEN_POPUP_Modifier_Produit
+     identifier : 0x4f0ef042000f1480
+     internal_properties : CAAAAAgAAAAeBHYqmcZuAcTNvV6nz22oii1J6dWAl4WyUoG36QaOslaE6WexDzXupZEL9b0zz8ELCw==
+     physical_name : .\FEN_POPUP_Modifier_Produit.wdw
+     type : 2
+   -
+     name : FEN_Principale
+     identifier : 0x4f0e9d5e000948c2
+     internal_properties : CAAAAAgAAAD9WdXJ9qMLFDniTk+wqXhbzeiUxPhzYueOt/LjK/Smco5CEU/YIET/irYgmBjIsCDoaA==
+     physical_name : .\FEN_Principale.wdw
+     type : 2
+   -
+     name : FEN_POPUP_Modifier_Nouveauté
+     identifier : 0x4f157f18003a1fc5
+     internal_properties : CAAAAAgAAABSqIqeLRoSzeDZSUqzrQ1ILl0VDc7sp4pyQr8c7CToCAgqC0XVI0H6sW1XoWGfW023vw==
+     physical_name : .\FEN_POPUP_Modifier_Nouveauté.wdw
+     type : 2
+   -
+     name : FEN_Login
+     identifier : 0x4f0ea059000bf057
+     internal_properties : CAAAAAgAAADgXtjE41jQi6KHY+AZhAdOPG07E5b8k/pWXbgb4T/dGyUtAEDvyesk7yuVYyPdpRvlbQ==
+     physical_name : .\FEN_Login.wdw
+     type : 2
+   -
+     name : FEN_Sélection_Produit
+     identifier : 0x4f157a8d00385fc1
+     internal_properties : CAAAAAgAAABn409TUA0lxu/EpKFaxkYNfyh6amk/sZS2Nbwno30Z12XrQICuCirlrGhSrnZqFopy8g==
+     physical_name : .\FEN_Sélection_Produit.wdw
+     type : 2
+   -
+     name : WinDevMessageBox
+     identifier : 0x40b8e3cc002b3a39
+     internal_properties : CAAAAAgAAADfuzfr2IWtvgcM/BniP4JpN1p27mP5/+Jywh/8fpJ4+BwgF7lmUnKtZNDKNv7yjgLKSg==
+     physical_name : .\WinDevMessageBox.WDW
+     type : 2
+   -
+     name : WinDevDialogBox
+     identifier : 0x40b8e3cd002f3db2
+     internal_properties : CAAAAAgAAADva8fb6JWdThdczMkyIPLRv+y6khU5v9dOqzynYb9fmaOthspWosJ9NODaJu7inhL6eg==
+     physical_name : .\WinDevDialogBox.WDW
+     type : 2
+  other_elements : []
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - fr-FR
+ wd_style_sheet : .\eCommerce_BackOffice.sty
+ wb_style_sheet : .\eCommerce.wws
+ code_elements :
+  internal_properties : CAAAAAgAAAAySygPcZ4GJX0P6OaZtGImf6VeIpQpJLYsyy6IpEyeB4oR6+2AWanMnxYyL8kUO6ZLoCf7gRyLXo4A3BCx9g==
+  type_code : 0
+  p_codes :
+   -
+     code : |1+
+      
+      // Variables globales
+      gsURLSite 				est une chaine
+      gsRepCache 				est une chaine = fRepDonnées() + [fsep] + <§@00000000000000000002§>
+      gsRepCacheProduits 		est une chaine = gsRepCache + [fsep] + <§@00000000000000000003§>
+      gsRepCacheFamilles 		est une chaine = gsRepCache + [fsep] + <§@00000000000000000004§>
+      
+      // Création des répertoires
+      Si pas fRépertoireExiste(gsRepCache) ALORS
+      	SI PAS fRepCrée(gsRepCache) ALORS
+      		FinProgramme(<§@00000000000000000000§>,<§@00000000000000000001§>,gsRepCache)
+      	FIN
+      FIN
+      SI PAS fRépertoireExiste(gsRepCacheProduits) ALORS
+      	SI PAS fRepCrée(gsRepCacheProduits) ALORS
+      		FinProgramme(<§@00000000000000000000§>,<§@00000000000000000001§>,gsRepCacheProduits)
+      	FIN
+      FIN
+      SI PAS fRépertoireExiste(gsRepCacheFamilles) ALORS
+      	SI PAS fRepCrée(gsRepCacheFamilles) ALORS
+      		FinProgramme(<§@00000000000000000000§>,<§@00000000000000000001§>,gsRepCacheFamilles)
+      	FIN
+      FIN
+      
+      // Tableaux mémoire
+      gtabFamilles 			est un tableau de STCOL_Famille
+      gtabProduits 			est un tableau de STCOL_Produit
+      gtabNouveautés 			est un tableau de STCOL_Nouveauté
+      gtabPromotions			est un tableau de STCOL_Promotion
+      gtabActualités			est un tableau de STCOL_Actualités
+      gtabEtatCommande		est un tableau de STCOL_ETATCOMMANDE
+     type : 196608
+   -
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : Exécutable Windows 32 bits
+     identifier : 0x4f0e9ce700037953
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : eCommerce
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      fr-FR : Impossible de créer le répertoire de cache.
+     index : 0
+   -
+     text :
+      fr-FR : "Vérifiez vos droits d'accès à :"
+     index : 1
+   -
+     text :
+      fr-FR : cache
+     index : 2
+   -
+     text :
+      fr-FR : produits
+     index : 3
+   -
+     text :
+      fr-FR : familles
+     index : 4
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==
